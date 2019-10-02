@@ -666,6 +666,7 @@ a:hover {
   right: 0;
   top: 0;
   z-index: 0;
+  pointer-events: none;
 }
 blockquote {
   font-style: italic;
@@ -1085,7 +1086,7 @@ pre {
     display: none;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .navbar-toggleable-md .navbar-nav .dropdown-menu {
     position: static;
     float: none;
@@ -1095,7 +1096,7 @@ pre {
     padding-left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-toggleable-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1288,6 +1289,42 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card-wrapper {
+    flex: auto!important;
+  }
+}
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #149dcc;
+  color: #ffffff;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
+  border-top-color: #149dcc;
+  border-bottom-color: #149dcc;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #149dcc !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #ff3366 !important;
+  box-shadow: none !important;
+}
 .cid-qTkA127IK8 {
   background-image: url("../../../assets/images/fullsizerender-756x678.jpg");
 }
@@ -1387,105 +1424,6 @@ body {
 }
 .cid-rwwku9mRuJ H2 {
   color: #232323;
-}
-.cid-rwMh8tADLN {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #c1c1c1;
-}
-.cid-rwMh8tADLN .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rwMh8tADLN .formoid {
-  margin: auto;
-}
-.cid-rwMh8tADLN .form-control {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.cid-rwMh8tADLN a.btn {
-  flex: 0 0 auto;
-  -webkit-flex: 0 0 auto;
-}
-.cid-rwMh8tADLN .input-group-btn {
-  align-self: center;
-  -webkit-align-self: center;
-  z-index: 3;
-}
-.cid-rwMh8tADLN .input-group-btn .btn {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-.cid-rwMh8tADLN a:not([href]):not([tabindex]) {
-  color: #fff;
-}
-.cid-rwMh8tADLN a.btn-white:not([href]):not([tabindex]) {
-  color: #333;
-}
-.cid-rwMh8tADLN .mbr-subscribe .input-group-btn {
-  display: inline-block;
-}
-.cid-rwMh8tADLN .mbr-subscribe .input-group-btn button,
-.cid-rwMh8tADLN .mbr-subscribe .input-group-btn a {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-@media (max-width: 350px) {
-  .cid-rwMh8tADLN .mbr-subscribe {
-    flex-direction: column;
-    -webkit-flex-direction: column;
-  }
-  .cid-rwMh8tADLN input[type="email"] {
-    width: 100%;
-    margin-bottom: 2px;
-  }
-  .cid-rwMh8tADLN .input-group-btn {
-    width: 100%;
-  }
-  .cid-rwMh8tADLN .input-group-btn .btn {
-    border-radius: 3px;
-  }
-}
-@media (max-width: 768px) {
-  .cid-rwMh8tADLN .input-group-btn a.btn {
-    width: 100%;
-  }
-  .cid-rwMh8tADLN .input-group-btn {
-    width: calc(92%);
-  }
-  .cid-rwMh8tADLN .input-group-btn button[type="submit"] {
-    width: 100%;
-  }
-  .cid-rwMh8tADLN .input-group {
-    display: -webkit-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: auto;
-    max-width: 300px;
-    -webkit-flex-direction: column;
-    -webkit-flex-wrap: wrap;
-  }
-  .cid-rwMh8tADLN .input-group input[type="email"] {
-    width: 100%;
-    margin-bottom: 3px;
-  }
-  .cid-rwMh8tADLN .input-group span {
-    display: inline;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .cid-rwMh8tADLN .input-group-btn button,
-  .cid-rwMh8tADLN .input-group-btn a {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
-@media (min-width: 769px) {
-  .cid-rwMh8tADLN .mbr-subscribe > * {
-    margin: 0 0.5rem;
-  }
 }
 .cid-rwDOqBrlbs {
   padding-top: 0px;
